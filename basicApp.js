@@ -41,7 +41,7 @@ var askQuestions = function () {
         });
     }
 
-    // after finishing looping through questions then ask user if they want to play y/n
+    // after finishing looping through questions then ask user if they want to play again
     else {
         console.log("\n >>>>> THE END <<<<<")
         inquirer.prompt([
@@ -60,12 +60,11 @@ var askQuestions = function () {
 
             }
             else {
+                // bye felicia
                 console.log(">>>>> SEE YA LATER! <<<<<");
             }
-
         });
     }
-
 };
 
 // call the AskQuestions function to run the program
